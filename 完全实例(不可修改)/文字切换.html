@@ -1,0 +1,43 @@
+   <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
+    <html>  
+    <head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+   <title>tab切换（定宽，背景图片，最后一个tab对齐）</title>  
+    <style type="text/css">  
+    #box{width:320px;font-size:12px}  
+   #box ul{margin:0;padding:0;list-style:none}  
+    #box #tab{height:26px;border-bottom:1px solid #dfdfdf}  
+   #box #tab li{width:100px;height:18px;padding-top:8px;margin-right:10px;text-align:center;cursor:pointer;position:relative;top:1px;}  
+   #box #tab li.on{color:#00f;background-position:-110px 0}  
+   #box #tab_con{margin-left:200px; border:1px solid #dfdfdf;border-top:none;padding:20px}  
+   #box #tab_con li{display:none}  
+   #box #tab_con #tab_con_1{display:block}  
+   </style>  
+  </head>  
+  
+ <body>  
+   <div id="box">  
+     <ul id="tab">  
+          <li class="on" id="tab_1" onClick="switchTab(1)">新闻</li>  
+         <li id="tab_2" onClick="switchTab(2)">财经</li>  
+         <li id="tab_3" onClick="switchTab(3)" style="margin:0">娱乐</li>  
+      </ul>  
+       <ul id="tab_con">  
+          <li id="tab_con_1">新闻内容</li>  
+           <li id="tab_con_2">财经内容</li>  
+           <li id="tab_con_3">娱乐内容</li>  
+       </ul>  
+   </div>  
+   
+  <script type="text/javascript">  
+   function switchTab(n){  
+    for(var i = 1; i <= 3; i++){  
+     document.getElementById("tab_" + i).className = "";  
+     document.getElementById("tab_con_" + i).style.display = "none";  
+   }  
+    document.getElementById("tab_" + n).className = "on";  
+    document.getElementById("tab_con_" + n).style.display = "block";  
+   }  
+   </script>  
+   </body>  
+   </html>  

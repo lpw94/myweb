@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>多选下拉菜单</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            
+         $(function(){
+           $("#copy").click(function(){
+             $("#city_add").clone(true).appendTo("span");  
+           });
+         });
+        </script>
+
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+   
+    <div>
+   <div id="city_add">
+        城市：<select name="staff_invcityid" id="staff_invcityid">
+                
+                    <foreach name="city" item="c">
+                    <option value="{$c.id}">{$c.city_sx}—{$c.city_cn}</option>
+                </foreach>
+                    
+                </select>
+                区：<select name="invareaid" id="staff_invareaid">
+                <foreach name="area" item="a">
+                    <option value="{$a.id}">{$a.area_sx}--{$a.area_cn}</option>
+                </foreach>
+                </select>
+                <a href="#" id="copy">添加</a>
+                
+        </div>
+        <input type="button" id="Button1" value="复 制" />
+       
+    </div>
+
+</html>

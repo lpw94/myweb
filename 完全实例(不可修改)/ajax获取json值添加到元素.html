@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title>ajax实例</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var Oul =$("#ul1");
+      $("#btn1").click(function() {
+        $.ajax({
+                   url : "xxx.html",
+                   success : function(msg) {
+                      var arr = eval(msg);
+                      for (var i=0; i < arr.length; i++) {
+                            var Oli = document.createElement("li");
+                            Oli.innerHTML="姓名：<strong> "+ arr[i].user +" </strong>年龄：<span>  "+ arr[i].pass +" </span>";
+                            Oul.append(Oli);
+                        };
+                   },
+                   error : function(){
+                       alert("0000");
+                   }
+                   
+               });
+       
+    }); 
+        };
+    </script>
+    </head>
+    
+    
+    <body>
+        
+       <input id="btn1" type="button" value="提交" /> 
+       <ul id="ul1">
+          <li>姓名：<strong>张三</strong>年龄：<span>13</span></li>  
+       </ul>
+        
+    </body>
+</html>

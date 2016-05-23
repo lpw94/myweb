@@ -1,0 +1,33 @@
+<html>
+	<head>
+	    <meta charset="UTF-8"/>
+		<title>显示、隐藏密码</title>
+		<style>
+			body, input {
+				font: menu
+			}
+		</style>
+	</head>
+	<body>
+		<form method="POST" action="#" name="forms">
+			<span id=box>
+				<input type="password" name="password" size="20" value="mimamimamima">
+			</span>
+			<span id="click"><a href="javascript:ps()">显示密码</a></span>
+			<script type="text/javascript">
+				function ps() {
+					if (this.forms.password.type = "password")
+						box.innerHTML = "<input type=\"html\" name=\"password\" size=\"20\" value=" + this.forms.password.value + ">";
+					    click.innerHTML = "<a href=\"javascript:txt()\">隐藏密码</a>";
+					    alert(this.forms.password.value);
+				}
+
+				function txt() {
+					if (this.forms.password.type = "text")
+						box.innerHTML = "<input type=\"password\" name=\"password\" size=\"20\" value=" + this.forms.password.value + ">";
+					    click.innerHTML = "<a href=\"javascript:ps()\">显示密码</a>";
+				}
+			</script>
+		</form>
+	</body>
+</html>

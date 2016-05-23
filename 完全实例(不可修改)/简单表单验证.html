@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+    function nameonblur(){
+        var name = document.getElementById("username");
+        var username = name.value;
+        if (username.length >= 4 && username.length <= 16) {
+            var write = document.getElementById("write");
+            write.innerHTML = "用户名正确";
+          }else{
+            var write = document.getElementById("write");
+            write.innerHTML = "用户名输入错误";
+          }
+        };
+      function passWonblur(){
+        var pass = document.getElementById("passWord");
+        var password = pass.value;
+        if (password.length >= 6 && password.length <= 16) {
+            var write = document.getElementById("writeP");
+            write.innerHTML = "正确";
+          }else{
+            var write = document.getElementById("writeP");
+            write.innerHTML = "密码输入错误";
+          }
+        };  
+</script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>用户名:</td>
+            <td><input id="username" type="text" name="username" placeholder="输入您的用户名" onblur="nameonblur()"  /></td>
+            <td id="write"> </td>
+        </tr>
+         <tr>
+             <td>密码:</td>
+            <td><input id="passWord" type="text" name="password" placeholder="输入您的密码" onblur="passWonblur()" /></td>
+            <td id="writeP"> </td>
+        </tr>
+        <tr>
+            <td><input placeholder="请输入您的密码" name="pass" id="LoginForm_password" type="password" maxlength="16"></td>
+            <td>aaaaa</td>
+        </tr>
+    </table>
+</body>

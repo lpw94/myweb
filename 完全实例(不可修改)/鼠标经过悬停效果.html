@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>测试页面</title>
+		<meta http-equiv="Page-Enter" content="RevealTrans(duration=5,Transitionv=23)">
+		<script type="text/javascript"  src="js/jquery-1.7.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/test.css" />
+		<script type="text/javascript">
+		  $(document).ready(function(){
+                      	$("#my").hover(function(){
+                      		$("#me").toggle(100);
+                                  	     });
+                                           });
+		</script>
+		<style type="text/css">
+		 .one{
+		 	position:relative;
+		 	float:left;
+		 	overflow:hidden;
+		 	width: 200px;
+		 	height: 200px;
+		 	background-color: #00997A;
+		 }
+		 .one span{
+		 	position: absolute;
+		 	top:0px;
+		 	left: 0px;
+		 }
+		 .one span:hover{
+		 	border: 100px #3D3D3D solid;
+		 }
+		</style>
+	</head>
+	<body>
+		<div id="pic">
+			<img src="img/01.jpg" />
+		</div>
+		<ul>
+			 <li>
+				<a href="#" class="bottom"> <span> <em><img src="img/03.jpg" /></em> </span> </a>
+			 </li>
+		</ul>
+		
+		<div class="three four">
+		<img src="img/03.jpg" />
+        <div class="mask">
+			<a href="#" class="info">Read More</a>
+		</div>
+	  </div>
+	
+		<div class="six seven">
+        	 <img src="img/8.jpg" />
+        	 <div class="mask">
+			<a href="#" class="info">Read More</a>
+		           </div>
+            </div>
+            
+            
+            <div class="one">
+            <span>
+            	    这个内容要居中
+            </span>
+            </div> 
+            
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    
+    
+    
+    
+    
+    
+    
+    <div id="my">鼠标经过弹出信息</div>
+    <div id="me">弹出信息弹出信息弹出信息弹
+    	                     出信息弹出信息弹出信息
+    	                     弹出信息弹出信息弹出信息弹
+    	                     出信息弹出信息弹出信息
+    	                     </div>
+	</body> 
+</html>

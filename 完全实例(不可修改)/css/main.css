@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+body{background:#fff; font-size:12px; font-family:"verdana,Arial";  margin:0px; padding:0px; color:#404040; }
+div{margin:0 auto; padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{margin:0; padding:0; border:none; list-style-type:none;}
+a{ color:#4e6a81;}
+a:hover{ color:#ff9600;}
+
+
+/* 公共样式 */
+.button{
+background:none repeat scroll 0 0 #4e6a81;
+border-color:#dddddd #000000 #000000 #dddddd;
+border-style:solid;
+border-width:2px;
+color:#FFFFFF;
+cursor:pointer;
+letter-spacing:0.1em;
+overflow:visible;
+padding:3px 15px;
+width:auto;
+cursor:pointer;
+text-decoration:none;
+}
+.main{ padding:10px; }
+
+table.form{ width:100%; border-top:#ccc solid 1px; font-size:14px; border-left:#ccc solid 1px; background:#fff;}
+table.form th{ height:25px; text-align:center; background:#edf3f7; line-height:25px;  border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+table.form td{ padding:5px; border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
+
