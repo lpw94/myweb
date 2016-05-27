@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>jquery鼠标跟随导航效果</title>
+		<style type="text/css">
+			body {
+				font-size: 100%;
+				font-family: "Microsoft YaHei", "Arial";
+				background: #fff;
+			}
+			
+			#nav {
+				position: relative;
+				width: 500px;
+				_width: 510px;
+			}
+			
+			#nav .nav-menu {
+				height: 80px;
+			}
+			
+			#nav .nav-menu a {
+				display: block;
+				float: left;
+				height: 80px;
+				padding: 0 20px;
+				line-height: 80px;
+				color: #666;
+				font-size: 16px;
+				text-decoration: none;
+			}
+			#nav .nav-menu a:hover {
+				color: green;
+			}
+			
+			#nav .nav-current {
+				position: absolute;
+				bottom: -2px;
+				height: 2px;
+				overflow: hidden;
+				background: #80b600;
+			}
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<div id="nav">
+			<div class="nav-menu">
+				<a href="index.html" class="current">首页</a>
+				<a href="product.html" class="">产品展示</a>
+				<a href="operatingsymtem.html" class="">运营体系</a>
+				<a href="abouts.html" class="">关于我们</a>	
+			</div>
+			<div class="nav-current"></div>
+		</div>
+	</body>
+
+</html>

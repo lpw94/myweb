@@ -1,225 +1,351 @@
 /*! normalize.css v3.0.2 | MIT License | github.com/necolas/normalize.css */
+
 * {
-    margin: 0;
-    padding: 0
+	margin: 0;
+	padding: 0
 }
 
-html, a, body, p, li, ul, ol, table, span, label, b, s, i, div, strong, h1, h2, h3, h4, h5, h6, em, button, input, textarea, form {
-    font-family: "微软雅黑", Arial, sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+html,
+a,
+body,
+p,
+li,
+ul,
+ol,
+table,
+span,
+label,
+b,
+s,
+i,
+div,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+button,
+input,
+textarea,
+form {
+	font-family: "微软雅黑", Arial, sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
 }
+
 body {
-    width:100%;
-    min-width: 1120px;
-
-    margin: 0 auto;
+	width: 100%;
+	min-width: 1120px;
+	margin: 0 auto;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block
 }
 
-audio, canvas, progress, video {
-    display: inline-block;
-    vertical-align: baseline
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline
 }
 
 audio:not([controls]) {
-    display: none;
-    height: 0
+	display: none;
+	height: 0
 }
 
-[hidden], template {
-    display: none
+[hidden],
+template {
+	display: none
 }
 
 a {
-    background-color: transparent;
-    text-decoration: none;
+	background-color: transparent;
+	text-decoration: none;
 }
 
-a:active, a:hover {
-    outline: 0
+a:active,
+a:hover {
+	outline: 0
 }
 
 abbr[title] {
-    border-bottom: 1px dotted
+	border-bottom: 1px dotted
 }
 
-b, strong {
-    font-weight: bold
+b,
+strong {
+	font-weight: bold
 }
 
 dfn {
-    font-style: italic
+	font-style: italic
 }
 
 h1 {
-    font-size: 2em;
-    margin: .67em 0
+	font-size: 2em;
+	margin: .67em 0
 }
 
 mark {
-    background: #ff0;
-    color: #000
+	background: #ff0;
+	color: #000
 }
 
-
-
 img {
-    border: 0
+	border: 0
 }
 
 svg:not(:root) {
-    overflow: hidden
+	overflow: hidden
 }
 
 figure {
-    margin: 1em 40px
+	margin: 1em 40px
 }
 
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
 }
 
 pre {
-    overflow: auto
+	overflow: auto
 }
 
-code, kbd, pre, samp {
-    font-family: monospace, monospace;
-    font-size: 1em
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em
 }
 
-ul, ol {
-    list-style: none
+ul,
+ol {
+	list-style: none
 }
 
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0
 }
 
 button {
-    overflow: visible
+	overflow: visible
 }
 
-button, select {
-    text-transform: none
+button,
+select {
+	text-transform: none
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
-    border: 0;
-    padding: 0
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
 }
 
 input {
-    line-height: normal
+	line-height: normal
 }
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: .35em .625em .75em
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em
 }
 
 legend {
-    border: 0;
-    padding: 0
+	border: 0;
+	padding: 0
 }
 
 textarea {
-    overflow: auto
+	overflow: auto
 }
 
 optgroup {
-    font-weight: bold
+	font-weight: bold
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+	border-collapse: collapse;
+	border-spacing: 0
 }
 
-td, th {
-    padding: 0
+td,
+th {
+	padding: 0
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+ul li,
+ol li {
+	padding: 0;
+	margin: 0
 }
 
 
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0
-}
+/*头部*/
 
-ul li, ol li {
-    padding: 0;
-    margin: 0
-}
-			/*头部*/
 #header {
-    width: 100%;
-    height: 100px;
-    background: #FFF;
-    overflow: hidden;
+	width: 100%;
+	height: 100px;
+	background: #FFF;
+	overflow: hidden;
 }
 
 #header .wrap {
-    width: 1040px;
-    margin: 0 auto;
-    position: relative;
-
+	width: 1040px;
+	margin: 0 auto;
+	position: relative;
 }
 
 #header .logo {
-    float: left;
-    height: 100px;
-    padding: 10px 10px 0;
-    overflow: hidden;
+	float: left;
+	height: 100px;
+	padding: 10px 10px 0;
+	overflow: hidden;
 }
 
-#header .nav {
-    float: right;
+/*#header .nav {
+	float: right;
 }
 
 #header .nav li {
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
-#header .nav li, #header .nav a {
-padding-top:4px;
-    font-size: 18px;
-    float: left;
+#header .nav li,
+#header .nav a {
+	padding-top: 4px;
+	font-size: 18px;
+	float: left;
 }
 
 #header .nav a {
-    color: #808080;
-    line-height: 89px;
-
+	color: #808080;
+	line-height: 89px;
+	transition: all ease 150ms;
 }
 
 #header .nav a:active {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    text-decoration: none;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	text-decoration: none;
+}
+
+#header .nav a:hover {
+	color: #7FCE01;
+	border-bottom: 3px solid #7FCE01;
 }
 
 #header .nav li a.current {
-    color: #7FCE01;
-    border-bottom: 3px solid #7FCE01;
+	color: #7FCE01;
+	border-bottom: 3px solid #7FCE01;
+}*/
+
+.lang {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 110px;
+	height: 20px;
+	color: #ccc;
+	font-size: 12px;
+	z-index: 10;
 }
-.lang{position: absolute;top: 0;right: 0; width: 110px;height: 20px;color: #ccc;font-size: 12px;}
-.lang a{color: #999;}
+
+.lang a {
+	color: #999;
+}
+
+#nav {
+	float: right;
+	position: relative;
+	width: 400px;
+	_width: 410px;
+}
+
+#nav .nav-menu {
+	height: 90px;
+}
+
+#nav .nav-menu a {
+	display: block;
+	float: left;
+	height: 90px;
+	padding: 0 20px;
+	line-height: 90px;
+	color: #666;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#nav .nav-menu a:hover {
+	color: #7FCE01;
+}
+#nav .nav-menu a.current {
+	color: #7FCE01;
+}
+#nav .nav-current {
+	position: absolute;
+	bottom: -2px;
+	height: 2px;
+	overflow: hidden;
+	background: #7FCE01;
+}
+#gotop {
+	z-index: 99999;
+	display: none;
+	cursor: pointer;
+	width: 46px;
+	height: 46px;
+	position: fixed;
+	bottom: 80px;
+	right: 0px;
+	background: url(../images/top.png) center center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
 /*低部*/
+
 #footer {
-    position: relative;
-    padding: 34px 0;
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
-    background-color: #464659;
+	position: relative;
+	padding: 34px 0;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background-color: #464659;
 }
