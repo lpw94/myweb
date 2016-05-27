@@ -4,8 +4,9 @@
 		<meta charset="UTF-8">
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>	
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>	
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -26,29 +27,7 @@
 					</div>
 					<div class="nav-current"></div>
 				</div>
-		        <!--<ul class="nav">
-		            <li>
-		                <a href="index.html" class="current">
-		                   首页
-		                </a>
-		            </li>
-		            <li>
-		                <a href="product.html" class="">
-		                    产品展示
-		                </a>
-		            </li>
-		            <li>
-		                <a href="operatingsymtem.html" class="">
-		                    运营体系
-		                </a>
-		            </li>
-		            <li>
-		                <a href="abouts.html" class="">
-		                   关于我们
-		                </a>
-		            </li>
-		
-		        </ul>-->
+
 		    </div>
 		</div>
 		<!--头部导航-->
@@ -65,6 +44,23 @@
 				<li class="headConback3 block_hide" style="display: none;"></li>
 			</ul>
 			<!-- 轮播 -->
+			
+				<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/13993708861758.jpg" /></div>
+            <div class="swiper-slide"><img src="images/14005815227233.png" /></div>
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white "></div>
+        <!-- Add Navigation -->
+        <div class="prev"></div>
+        <div class="next"></div>
+    </div>
+			
+			
+			
 			<div class="mihm_body_contentA">
 				<div class="mihm_body_conteA">
 					<div class="mihm_body_conA">
@@ -369,5 +365,22 @@
 	
 	    </div>
 	    <!--底部-->
+	    
+	     <!-- Swiper JS -->
+    <script src="js/swiper.jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    	effect : 'fade',
+    	loop : true,
+    	speed: 500,
+    	autoplay : 3000,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.next',
+        prevButton: '.prev' 
+    });
+    </script>
 	</body>
 </html>
