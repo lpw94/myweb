@@ -310,6 +310,10 @@ ol li {
 	color: #666;
 	font-size: 16px;
 	text-decoration: none;
+	transition: all ease 150ms;
+	-webkit-transition: all ease 150ms;
+	-moz-transition: all ease 150ms;
+	-ms-transition: all ease 150ms;
 }
 
 #nav .nav-menu a:hover {
@@ -332,7 +336,7 @@ ol li {
 	width: 46px;
 	height: 46px;
 	position: fixed;
-	bottom: 80px;
+	bottom: 100px;
 	right: 0px;
 	background: url(../images/top.png) center center no-repeat;
 	background-size: 100% 100%;
@@ -340,7 +344,6 @@ ol li {
 }
 
 /*低部*/
-
 #footer {
 	position: relative;
 	padding: 34px 0;
