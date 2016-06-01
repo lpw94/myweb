@@ -336,7 +336,7 @@ ol li {
 	width: 46px;
 	height: 46px;
 	position: fixed;
-	bottom: 100px;
+	bottom: 140px;
 	right: 0px;
 	background: url(../images/top.png) center center no-repeat;
 	background-size: 100% 100%;
@@ -346,9 +346,21 @@ ol li {
 /*低部*/
 #footer {
 	position: relative;
-	padding: 34px 0;
+	padding: 20px 0;
 	font-size: 14px;
 	text-align: center;
 	color: #fff;
 	background-color: #464659;
+}
+#footer .wrap .footer_nav{
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+}
+#footer .wrap .footer_nav a{
+	color: #FFFFFF;
+	font-size: 14px;
+}
+#footer .wrap p{
+	line-height: 24px;
 }

@@ -6,8 +6,10 @@
 		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
 		<!--<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>-->
 		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
 		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--<script src="js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
 		
 		
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
@@ -37,7 +39,14 @@
 				-webkit-align-items: center;
 				align-items: center;
 			}
-			
+			.ani{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				font-size: 30px;
+				color: #E63C3C;
+				font-weight: bold;
+			}
 			.prev,
 			.next {
 				position: absolute;
@@ -151,8 +160,14 @@
 		<!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/13993708861758.jpg" /></div>
-            <div class="swiper-slide"><img src="images/14005815227233.png" /></div>
+            <div class="swiper-slide">
+            	<p class="ani" data-swiper-parallax = "-1500" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">内容</p>
+            	<img src="images/13993708861758.jpg" />
+            </div>
+            <div class="swiper-slide">
+            	<p class="ani" data-swiper-parallax = "-1500" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">内容</p>
+            	<img src="images/14005815227233.png" />
+            </div>
             
         </div>
         <!-- Add Pagination -->
@@ -176,10 +191,17 @@
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.next',
-        prevButton: '.prev' 
+        prevButton: '.prev',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+		    swiperAnimateCache(swiper); //隐藏动画元素 
+		    swiperAnimate(swiper); //初始化完成开始动画
+		}, 
+	    onSlideChangeEnd: function(swiper){ 
+		    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+		}
     });
     </script>
-		
+
 		
 		
 		
@@ -188,7 +210,13 @@
 		<!--底部-->
 		<div style="margin-top: 50px;" id="footer">
 	        <div class="wrap">
-	            <p> ©深圳XXX信息技术有限公司 &nbsp;&nbsp;网站备案号：粤ICP备66666666号-1</p>
+	        	<div class="footer_nav">
+	        		<a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="abouts.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">工作机会</a>
+	        	</div>
+	        	
+	        	<p>联系电话： 0755-26648948</p>
+	        	<p>公司地址：深圳市福田区泰然四路天安数码城创新科技广场一期A座704</p>
+	            <p>©深圳XXX信息技术有限公司 &nbsp;&nbsp;网站备案号：粤ICP备66666666号-1</p>
 	        </div>
 	    </div>
 	    <!--底部-->
