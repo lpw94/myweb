@@ -75,8 +75,18 @@
 				  opacity: 1;
 				  background: #007aff;
 				}
+				
+				
+				
+.big-pic{
+	margin: 0 auto;
+	width: 1240px;
+	vertical-align: bottom;
+}
 
-
+.big-pic img{
+	width: 100%;
+}
 .mihm-content-fn p {
 	font-size: 14px;
 	color: #555;

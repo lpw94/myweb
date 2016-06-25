@@ -5,6 +5,7 @@
 .page-title{font-size: 22px;font-weight: bolder;padding: 10px 0 18px}
 .content{width: 1165px;margin: 0 auto}
 .content a{color: #333333;}
+.clearfix{clear: both;}
 .clearfix:after{display: block;content: "";height: 0;clear: both;overflow: hidden}
 .cur-sub-nav{padding-top: 20px;margin-top: 30px;}
 .cnav-item{float: left;margin-right: 5px;margin-bottom: 30px;position: relative;width: 285px;height: 190px;}

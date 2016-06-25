@@ -214,7 +214,8 @@ ol li {
 	padding: 0;
 	margin: 0
 }
-
+.clearfix{clear: both;}
+.clearfix:after{display: block;content: "";height: 0;clear: both;overflow: hidden}
 
 /*头部*/
 
