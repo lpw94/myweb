@@ -1,1 +1,0 @@
-BCore.prototype.options.gid="b0605254007bf95200003fad003ddfba573d818a";
